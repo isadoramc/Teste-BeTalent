@@ -146,7 +146,7 @@ A cobertura de teste inclui:
 - CT04: Login com usuário "performance_glitch_user" 
   -Resultado: Sucesso ✅
   -Observação: Após clicar em "login", a página de login apresentou demora no redirecionamento e não permitiu cliques.
-  -Anexo: Segue comparação do Lighthouse dos usuários performance_glitch_user e standard_user, exibindo a performance de ambas as páginas ![screenshotct04](imagens/image-2.png "CT04")
+  -Anexo: Segue comparação do Lighthouse dos usuários performance_glitch_user e standard_user, exibindo a performance de ambas as páginas ![screenshotct04](./Imagens/image-2.png "CT04")
 
 - CT05: Login com usuário "error_user" 
   -Resultado: Sucesso ✅
@@ -162,41 +162,41 @@ A cobertura de teste inclui:
   -Resultado: Sucesso ✅
   -Observações:
     a.No usuário problem_user, as imagens exibidas dos produtos estão incorretas: 
-    -Anexo: ![screenshotct08](imagens/image.png "CT08")
+    -Anexo: ![screenshotct08](./Imagens/image.png "CT08")
     b. No usuário visual_user, a imagem do produto "Sauce Labs Backpack" está incorreta na página de ordenação dos produtos e os preços se alteram a cada filtro selecionado ou a cada vez que a página é acessada novamente.
      
 - CT09: Ordenação de produtos por nome (de Z a A)
   -Resultado: Falha ❌
   -Observações: 
-    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](image.png)
+    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](./Imagens/image.png)
     b. No usuário performance_glitch_user, a tela demorou para exibir a ordenação desejada dos produtos.
     c. No usuário error_user, ao selecionar este filtro, a plataforma exibiu a mensagem de erro "Sorting is broken! This error has been reported to Backtrace." Não foi possível utilizar o filtro.
     d.No usuário visual_user, a imagem do produto "Test.allTheThings() T-Shirt (Red)" está incorreta na página de ordenação dos produtos e os preços divergem conforme os filtros são alterados. 
-    -Anexo: ![screenshotct09](imagens/image-4.png "CT09")
+    -Anexo: ![screenshotct09](./Imagens/image-4.png "CT09")
 
 - CT10: Ordenação de produtos por Preço (de baixo a alto)
   -Resultado: Falha ❌
   -Observações: 
-    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](image.png)
+    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](./Imagens/image.png)
     b. No usuário performance_glitch_user, a tela demorou para exibir a ordenação desejada dos produtos.
     c. No usuário error_user, ao selecionar este filtro, a plataforma exibiu a mensagem de erro "Sorting is broken! This error has been reported to Backtrace." Não foi possível utilizar o filtro.
     d.No usuário visual_user, a imagem do produto "Sauce Labs Onesia" está incorreta na página de ordenação dos produtos; os preços divergem conforme os filtros são alterados e a ordenação de preços não está na ordem correta:
-    -Anexo: ![screenshotct10](imagens/image-5.png "CT10")
+    -Anexo: ![screenshotct10](./Imagens/image-5.png "CT10")
 
 - CT11: Ordenação de produtos por Preço (de alto a baixo)
   -Resultado: Falha ❌
   -Observações: 
-    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](image.png)
+    a. No usuário problem_user, o filtro não funcionou, além das imagens exibidas dos produtos estarem incorretas: -Anexo: ![screenshotct03](./Imagens/image.png)
     b. No usuário performance_glitch_user, a tela demorou para exibir a ordenação desejada dos produtos.
     c. No usuário error_user, ao selecionar este filtro, a plataforma exibiu a mensagem de erro "Sorting is broken! This error has been reported to Backtrace." Não foi possível utilizar o filtro.
     d.No usuário visual_user, a imagem do produto "Sauce Labs Fleece Jacket" está incorreta na página de ordenação dos produtos; os preços divergem conforme os filtros são alterados e a ordenação de preços não está na ordem correta:
-    -Anexo: ![screenshotct11](imagens/image-6.png "CT11")
+    -Anexo: ![screenshotct11](./Imagens/image-6.png "CT11")
 
 - CT12: Fluxo de compra
   -Resultado: Falha ❌
   -Observações: 
     a. No usuário performance_glitch_user o carrinho exibiu um ícone de 7 produtos, mesmo que apenas 6 tenham sido adicionados
-    -Anexo: ![screenshotct12](imagens/image-9.png "CT12")
+    -Anexo: ![screenshotct12](./Imagens/image-9.png "CT12")
     b. Nos usuários error_user e problem_user não é possível adicionar os itens Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Test.allTheThings() T-Shirt (Red) ao carrinho por essa tela.
 
  - CT12.1: Fluxo de compra a partir da página do produto
@@ -211,7 +211,7 @@ A cobertura de teste inclui:
       VI: Ao clicar em Test.allTheThings() T-Shirt (Red), o usuário é redirecionado ao produto Sauce Labs Backpack;
     b. No usuário performance_glitch_user, na página do produto, o botão "Back to products" demorou para redirecionar o usuário;
     c. No usuário error_user não é possível adicionar os itens Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Test.allTheThings() T-Shirt (Red) ao carrinho por essa tela.
-    d. Também no usuário problem_user, caso o produto "ITEM NOT FOUND" seja adicionado ao carrinho por essa tela, não é possível abrir a página do carrinho, pois a mesma fica em branco: ![screenshot12d](imagens/image-11.png "CT12.1")
+    d. Também no usuário problem_user, caso o produto "ITEM NOT FOUND" seja adicionado ao carrinho por essa tela, não é possível abrir a página do carrinho, pois a mesma fica em branco: ![screenshot12d](./Imagens/image-11.png "CT12.1")
 
 - CT13: Fluxo de checkout com 1 ou mais itens no carrinho
   -Resultado: Falha ❌
@@ -223,7 +223,7 @@ A cobertura de teste inclui:
 - CT13.1: Fluxo de checkout com 0 itens no carrinho
   -Resultado: Falha ❌
   -Observações: Foi possível clicar no botão "Checkout", continuar o fluxo de checkout e finalizar a compra mesmo com 0 itens no carrinho. Também foi indevidamente exibida uma mensagem de sucesso e finalização da compra.
-     -Anexo:![screenshotct13](imagens/image-7.png "CT13.1")
+     -Anexo:![screenshotct13](./Imagens/image-7.png "CT13.1")
     
 - CT14: Fluxo de checkout com dados vazios
   -Resultado: Falha ❌
@@ -268,9 +268,9 @@ A cobertura de teste inclui:
   b. Corrigir a disposição do botão do carrinho, que está desalinhado do resto da página;
   c. Alinhar o botão "Add to cart/Remove" do produto "Test.allTheThings() T-Shirt (Red)" com os outros produtos;
   d. Padronizar o espaçamento antes do início do nome do produto;
-  -Anexo: ![screenshotct08.1](imagens/image-3.png "SMUX")
+  -Anexo: ![screenshotct08.1](./Imagens/image-3.png "SMUX")
   e. na tela do carrinho, mover o botão "Checkout" para o final da página, como nos outros usuários testados.
-    -Anexo:![screenshotct12.1](imagens/image-10.png "SMUX2")
+    -Anexo:![screenshotct12.1](./Imagens/image-10.png "SMUX2")
 
 
 ## 5. Bugs encontrados
@@ -362,7 +362,7 @@ A cobertura de teste inclui:
 ### 7.1 Testes de Responsividade
 A plataforma respondeu bem aos testes de responsividade, se adaptando de forma eficiente a um grande range de dimensões de tela.
 - Sugestão de melhoria: a partir do comprimento da tela de 478 pixels, as imagens começam a ficar adulteradas ao invés de manter a mesma dimensão:
-  -Anexo: ![printscreen](imagens/www.saucedemo.com_inventory.html.png "R01")
+  -Anexo: ![printscreen](./Imagens/www.saucedemo.com_inventory.html.png "R01")
 
 ### 7.2 Testes de Acessibilidade
 - Página de produtos: os filtros não possuem uma label associada, o que impede um recurso de leitura de tela, por exemplo, de funcionar corretamente nestes filtros.
